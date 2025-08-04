@@ -53,7 +53,8 @@ ul{
 }
 
 img{
-    max-width: 300px;
+    width: 300px;
+    height: 300px;
     display: inline-block;
     transition: transform 0.3s ease;
 }
