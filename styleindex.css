@@ -1,24 +1,24 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 
-body{
+body {
     background-color: #cec6c6;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
 }
 
-h1{
+h1 {
     text-align: center;
     color: #333;
     font-family: Arial, sans-serif;
 }
 
-p{
+p {
     font-size: 1.2em;
     text-align: justify;
     margin: 20px auto;
@@ -31,7 +31,7 @@ p{
     border-radius: 8px;
 }
 
-h3{
+h3 {
     color: #444;
     font-family: 'Courier New', Courier, monospace;
     max-width: 800px;
@@ -44,7 +44,7 @@ h3{
 
 }
 
-ul{
+ul {
     max-width: 800px;
     margin: 20px auto;
     list-style-type: disc;
@@ -52,33 +52,40 @@ ul{
     font-family: 'Courier New', Courier, monospace;
 }
 
-img{
-    width: 300px;
-    height: 300px;
-    display: inline-block;
+img {
+    width: 80%;
+    height: auto;
+    max-width: 320px;
+    min-width: 200px;
+    min-height: 200px;
+    margin: 0 auto;
     transition: transform 0.3s ease;
 }
 
-img:hover{
+img:hover {
     transform: scale(1.05);
     border-radius: 16px;
 }
 
-.in{
+.in {
     max-width: 800px;
     margin: 20px auto;
 }
 
-.item{
+.item {
     display: flex;
     flex-direction: row;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: rgb(173, 173, 173);
+    padding: 10px;
     justify-content: space-around;
     align-items: center;
     margin: 20px auto;
 }
 
 
-.rname{
+.rname {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     color: #333;
@@ -87,7 +94,7 @@ img:hover{
     max-width: 270px;
 }
 
-.item .desc{
+.item .desc {
     font-size: 1.2em;
     line-height: 1.5;
     max-width: 400px;
@@ -96,4 +103,21 @@ img:hover{
     text-align: justify;
     font-family: 'Courier New', Courier, monospace;
     color: #333;
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .item .desc {
+        padding: 20px;
+        margin: 20px auto;
+    }
 }
